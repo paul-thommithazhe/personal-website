@@ -8,7 +8,7 @@ var letter = /^[a-zA-Z]+$/
 var flag = 0
 var numletter = /^[0-9]+$/
 
-
+var mailformat = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
 
 
@@ -18,9 +18,9 @@ $("#submit-form").submit((e)=>{
     
      checknumber()
      checkphoneNumber()
-     console.log(flag)
-
-     if(flag == 2){
+     checkemail()
+    //  console.log(flag)
+     if(flag == 3){
         $.ajax({
             url:"https://script.google.com/macros/s/AKfycbywsbCugC8028mvxyO_XEhWOqR7KZko0guGItX4kA/exec",
             data:$("#submit-form").serialize(),
@@ -54,6 +54,18 @@ function checknumber(){
         // console.log(flag)
     }
 }
+
+
+function checkemail(){
+    if(mailformat.test(email.value)== false){
+        err[1].innerHTML = "email not valid"
+    }
+    else{
+        err[1].innerHTML = ""
+        flag+=1;
+    }
+}
+
 
 function checkphoneNumber(){
     if(number.value == ""){

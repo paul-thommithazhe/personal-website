@@ -443,13 +443,13 @@ section {
   font-style: normal;
 }
 .skills .progress-bar-wrap {
-  background: #f2f3f5;
+  background: black
 }
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #0563bb;
+  background-color: green;
 }
 
 /*--------------------------------------------------------------
@@ -1047,4 +1047,7 @@ section {
 }
 #footer .credits {
   font-size: 13px;
+}
+.static-static{
+  height: 40vh !important;
 }
