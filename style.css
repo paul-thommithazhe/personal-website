@@ -1,0 +1,17 @@
+#hero:before {
+    /* background-color: black !important; */
+}
+#hero h1{
+color: green !important;
+}
+.nav-menu .active{
+    background: green !important;
+}
+body{
+    /* color: white !important; */
+    /* background-color: black !important; */
+
+}
+#about{
+    /* background-color: black !important; */
+}
