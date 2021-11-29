@@ -1,7 +1,7 @@
 var username = document.getElementById("name")
 var email = document.getElementById("email")
 var number = document.getElementById("number")
-var messegeh = document.getElementById("messege")
+var messegeh = document.getElementById("messege-1")
 var err = document.getElementsByClassName("err")
 
 var letter = /^[a-zA-Z]+$/
@@ -87,8 +87,11 @@ function checkphoneNumber(){
     }
 }
 function checkmessege(){
-    if( messageh.value.length < 10){
-        err[3].innerHTML = "only 10 numbers"
+    if( messegeh.value.length < 10){
+        err[3].innerHTML = "write more than 10 words"
+    }
+    if(messegeh.value ==""){
+        err[3].innerHTML = "null space invalid"
     }
     else{
         err[3].innerHTML =""
