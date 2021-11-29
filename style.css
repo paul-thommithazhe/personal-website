@@ -1,6 +1,4 @@
-#hero:before {
-    /* background-color: black !important; */
-}
+
 #hero h1{
 color: green !important;
 }
@@ -12,9 +10,7 @@ body{
     background-color: black !important;
 
 }
-#about{
-    /* background-color: black !important; */
-}
+
 .bi-list::before {
     content: "\f479";
     color: green;
