@@ -15,3 +15,7 @@ body{
 #about{
     /* background-color: black !important; */
 }
+.bi-list::before {
+    content: "\f479";
+    color: green;
+}
