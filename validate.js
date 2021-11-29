@@ -46,7 +46,7 @@ function checknumber(){
     if(username.value == ""){
         err[0].innerHTML = "null not allowed"
     }else if(username.value.trim() == false){
-        err[0].innerHTML = "space not allowedde"
+        err[0].innerHTML = "space not allowed"
     }else if(letter.test(username.value) == false){
         err[0].innerHTML = "only character are allowded"
     }else{
