@@ -1,7 +1,7 @@
 var username = document.getElementById("name")
 var email = document.getElementById("email")
 var number = document.getElementById("number")
-var messege = document.getElementById("messege")
+var messegeh = document.getElementById("messege")
 var err = document.getElementsByClassName("err")
 
 var letter = /^[a-zA-Z]+$/
@@ -19,8 +19,9 @@ $("#submit-form").submit((e)=>{
      checknumber()
      checkphoneNumber()
      checkemail()
+     checkmessege()
     //  console.log(flag)
-     if(flag == 3){
+     if(flag == 4){
         $.ajax({
             url:"https://script.google.com/macros/s/AKfycbywsbCugC8028mvxyO_XEhWOqR7KZko0guGItX4kA/exec",
             data:$("#submit-form").serialize(),
@@ -83,5 +84,14 @@ function checkphoneNumber(){
     else{
         err[2].innerHTML = ""
         flag+=1;
+    }
+}
+function checkmessege(){
+    if( messageh.value.length < 10){
+        err[3].innerHTML = "only 10 numbers"
+    }
+    else{
+        err[3].innerHTML =""
+        flag+=1
     }
 }

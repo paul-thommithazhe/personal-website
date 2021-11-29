@@ -574,23 +574,23 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="err"></div>
-                  <input type="text" class="form-control" placeholder="First name" id="name" oninput="checknumber()">
+                  <input type="text" class="form-control" placeholder="First name" id="name" oninput="checknumber()" name="name">
                 </div>
                 <div class="col-md-6 ">
                   <div class="err"></div>
-                  <input type="text" class="form-control" placeholder="email" id="email" oninput="checkemail()">
+                  <input type="text" class="form-control" placeholder="email" id="email" oninput="checkemail()" name="email">
                 </div>
 
                 <div class="col-12 mt-5">
                   <div class="err"></div>
                   <input type="text" class="form-control" placeholder="phone number" id="number"
-                    oninput="checkphoneNumber()">
+                    oninput="checkphoneNumber()" name="number">
                 </div>
 
                 <div class="form-group mt-5">
                   <div class="err"></div>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="messege"
-                    id="messege"></textarea>
+                    id="messege" name="messege" id="message-send" oninput="checkmessage()"></textarea>
                 </div>
                 <div class="mt-5">
                   <button type="submit" class="btn btn-primary btn-lg btn-block col-12">submit</button>
