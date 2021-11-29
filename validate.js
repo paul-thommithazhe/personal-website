@@ -60,6 +60,7 @@ function checknumber(){
 function checkemail(){
     if(mailformat.test(email.value)== false){
         err[1].innerHTML = "email not valid"
+        
     }
     else{
         err[1].innerHTML = ""
