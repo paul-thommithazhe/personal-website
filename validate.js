@@ -44,7 +44,7 @@ function checknumber(){
 
     // console.log(username.value)
     if(username.value == ""){
-        err[0].innerHTML = "null not alloweded"
+        err[0].innerHTML = "null not allowed"
     }else if(username.value.trim() == false){
         err[0].innerHTML = "space not allowedde"
     }else if(letter.test(username.value) == false){
