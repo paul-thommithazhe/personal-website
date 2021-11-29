@@ -1051,3 +1051,6 @@ section {
 .static-static{
   height: 40vh !important;
 }
+.wwidth{
+  width:100% !important;
+}
