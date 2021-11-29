@@ -1,7 +1,7 @@
 var username = document.getElementById("name")
 var email = document.getElementById("email")
 var number = document.getElementById("number")
-var messegeh = document.getElementById("messege-1")
+var mass = document.getElementById("exampleFormControlTextarea1")
 var err = document.getElementsByClassName("err")
 
 var letter = /^[a-zA-Z]+$/
@@ -19,7 +19,7 @@ $("#submit-form").submit((e)=>{
      checknumber()
      checkphoneNumber()
      checkemail()
-     checkmessege()
+     checkmessage()
     //  console.log(flag)
      if(flag == 4){
         $.ajax({
@@ -52,7 +52,7 @@ function checknumber(){
     }else{
         err[0].innerHTML = ""
         flag += 1
-        // console.log(flag)
+        console.log(flag)
     }
 }
 
@@ -64,6 +64,8 @@ function checkemail(){
     else{
         err[1].innerHTML = ""
         flag+=1;
+        console.log(flag)
+
     }
 }
 
@@ -78,7 +80,7 @@ function checkphoneNumber(){
     else if(numletter.test(number.value) == false){
      err[2].innerHTML = "only numbers are allowed"
     }
-    else if( number.value.length > 10){
+    else if(number.value.length > 10){
             err[2].innerHTML = "only 10 numbers"
     }
     else{
@@ -86,15 +88,17 @@ function checkphoneNumber(){
         flag+=1;
     }
 }
-function checkmessege(){
-    if( messegeh.value.length < 10){
+function checkmessage(){
+    if( mass.value.length < 10){
         err[3].innerHTML = "write more than 10 words"
-    }
-    if(messegeh.value ==""){
-        err[3].innerHTML = "null space invalid"
     }
     else{
         err[3].innerHTML =""
         flag+=1
+        console.log(flag)
     }
 }
+
+//    else if(messegeh.value ==""){
+//         err[3].innerHTML = "null space invalid"
+//     }
